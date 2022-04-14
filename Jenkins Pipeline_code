@@ -5,24 +5,24 @@ pipeline{
     }
     agent any
     stages{
-        stage('Step 1: Git Clone'){
+        stage('Stage 1: Git Clone Project'){
             steps{
                 git branch: 'master', url: 'https://github.com/NirajGujarathi/calculator-devopsProject.git'
             }
         }
-        stage('Step 2: Maven Build'){
+        stage('Stage 2: Maven Build and JUnit Testing'){
             steps{
                 sh 'mvn clean package'
             }
         }
-        stage('Step 3: Build Docker Image'){
+        stage('Stage 3: Building Docker Image'){
             steps {
                 script {
                     docker_image = docker.build "nirajg/calculator_devops:latest"
                 }
             }
         }
-        stage('Step 4: Push docker image to hub') {
+        stage('Stage 4: login to dockerhub and push docker image') {
             steps {
                 script {
                     docker.withRegistry('', 'docker') {
@@ -31,7 +31,7 @@ pipeline{
                 }
             }
         }
-        stage('Step 5: Ansible Deployment'){
+        stage('Stage 5: Ansible Deployment to machine'){
             steps{
                 ansiblePlaybook becomeUser: 'null', colorized: true, credentialsId: 'docker', installation: 'Ansible', inventory: 'deployment/inventory', playbook: 'deployment/deploy.yml', sudoUser: 'null'
             }          
