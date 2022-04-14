@@ -1,0 +1,10 @@
+---
+- name: Pull Docker image of calculator_devops from DockerHub
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Pull image
+      docker_image:
+        name: nirajg/calculator_devops
+        source: pull
