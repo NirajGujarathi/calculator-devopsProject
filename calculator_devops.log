@@ -26,3 +26,11 @@
 14/Apr/2022:19:25:24 809 [Calculator.java] [INFO] Application.Calculator - SquareRoot calculation
 14/Apr/2022:19:25:24 811 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
 14/Apr/2022:19:33:58 068 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:20:13:36 095 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
+14/Apr/2022:20:13:36 103 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:20:13:36 105 [Calculator.java] [INFO] Application.Calculator - SquareRoot calculation
+14/Apr/2022:20:13:36 107 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
+14/Apr/2022:20:13:36 108 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
+14/Apr/2022:20:13:36 109 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:20:13:36 111 [Calculator.java] [INFO] Application.Calculator - SquareRoot calculation
+14/Apr/2022:20:13:36 112 [Calculator.java] [INFO] Application.Calculator - Factorial calculation

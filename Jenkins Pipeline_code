@@ -33,7 +33,7 @@ pipeline{
         }
         stage('Stage 5: Ansible Deployment to machine'){
             steps{
-                ansiblePlaybook becomeUser: 'null', colorized: true, credentialsId: 'docker', installation: 'Ansible', inventory: 'deployment/inventory', playbook: 'deployment/deploy.yml', sudoUser: 'null'
+                ansiblePlaybook becomeUser: 'null', colorized: true, credentialsId: 'docker', installation: 'Ansible', inventory: 'AnsibleDeployment/inventory', playbook: 'AnsibleDeployment/deploy.yml', sudoUser: 'null'
             }          
         }   
     }
