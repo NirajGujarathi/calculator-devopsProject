@@ -71,8 +71,8 @@ public class Calculator {
 
     //Factorial
     public static int factorial_Function(int num){
-        int ans = num ;
-        for(int i=num-1; i>=1; i--) {
+        int ans = 1;
+        for(int i=num; i>=1; i--) {
             ans = ans * i;
         }
         System.out.println("The Result is "+ ans);

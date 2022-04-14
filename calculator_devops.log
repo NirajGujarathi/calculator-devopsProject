@@ -34,3 +34,5 @@
 14/Apr/2022:20:13:36 109 [Calculator.java] [INFO] Application.Calculator - Power calculation
 14/Apr/2022:20:13:36 111 [Calculator.java] [INFO] Application.Calculator - SquareRoot calculation
 14/Apr/2022:20:13:36 112 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
+14/Apr/2022:20:51:59 468 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
+14/Apr/2022:20:52:06 505 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
