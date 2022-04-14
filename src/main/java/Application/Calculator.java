@@ -12,14 +12,12 @@ public class Calculator {
         int fact_num;
         System.out.println("-*-*-*-*-*-*-*-Calculator-*-*-*-*-*-*-*-");
         do{
-            System.out.println("Calculator Devops Project \nwith following list of operations : ");
-            System.out.println("");
+            System.out.println("\nCalculator Devops Project \nwith following list of operations : ");
             System.out.println("1. Square Root");
             System.out.println("2. Factorial ");
             System.out.println("3. Natural Logarithm");
             System.out.println("4. Power");
             System.out.println("5. Exit from Application");
-            System.out.println("");
             System.out.print("Enter your choice(number): ");
             System.out.println("");
             choices = reader.nextInt();
@@ -71,7 +69,7 @@ public class Calculator {
 
     public static double squareRoot_Function(double num){
         double ans = Math.sqrt(num);
-        System.out.println("\nThe Result is \n"+ ans);
+        System.out.println("The Result is "+ ans);
         logger.info("Executing squareRoot function!");
         return ans;
     }
@@ -82,19 +80,22 @@ public class Calculator {
         for(int i=num-1; i>=1; i--) {
             ans = ans * i;
         }
-        System.out.println("\nThe Result is \n"+ ans);
+        System.out.println("The Result is "+ ans);
+
         logger.info("Executing Factorial function!");
         return ans;
     }
     public static double naturalLog_Function(double num){
         double ans = Math.log(num);
-        System.out.println("\nThe Result is \n"+ ans);
+        System.out.println("The Result is "+ ans);
+
         logger.info("Executing NaturalLog function!");
         return ans;
     }
     public static double power_Function(double num, double exp){
         double ans = Math.pow(num,exp);
-        System.out.println("\nThe Result is \n"+ ans);
+        System.out.println("The Result is "+ ans);
+
         logger.info("Executing Power function!");
         return ans;
     }
