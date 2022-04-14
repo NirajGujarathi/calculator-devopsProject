@@ -19,39 +19,34 @@ public class Calculator {
             System.out.println("4. Power");
             System.out.println("5. Exit from Application");
             System.out.print("Enter your choice(number): ");
-            System.out.println("");
             choices = reader.nextInt();
             if(choices==5) flag = 1;
             else{
                 switch(choices){
 
                     case 1:
-                        System.out.println("Square Root - option selected");
-                        System.out.println("");
+                        System.out.println("Square Root - option selected\n");
                         System.out.print("Enter number: ");
                         num = reader.nextDouble();
                         squareRoot_Function(num);
                         break;
 
                     case 2:
-                        System.out.println("Factorial - option selected");
-                        System.out.println("");
+                        System.out.println("Factorial - option selected\n");
                         System.out.print("Enter number: ");
                         fact_num = reader.nextInt();
                         factorial_Function(fact_num);
                         break;
 
                     case 3:
-                        System.out.println("Natural Log - option selected");
-                        System.out.println("");
+                        System.out.println("Natural Log - option selected\n");
                         System.out.print("Enter number: ");
                         num = reader.nextDouble();
                         naturalLog_Function(num);
                         break;
 
                     case 4:
-                        System.out.println("Power - option selected");
-                        System.out.println("");
+                        System.out.println("Power - option selected\n");
                         System.out.print("Enter number: ");
                         num = reader.nextDouble();
                         System.out.print("Enter exponent: ");
@@ -60,7 +55,7 @@ public class Calculator {
                         break;
 
                     default:
-                        System.out.println("Invalid Choice! Exit application!");
+                        System.out.println("Invalid Choice! Exit application!\n");
                         flag = 1;
                 }
             }
@@ -70,7 +65,7 @@ public class Calculator {
     public static double squareRoot_Function(double num){
         double ans = Math.sqrt(num);
         System.out.println("The Result is "+ ans);
-        logger.info("Executing squareRoot function!");
+        logger.info("SquareRoot calculation");
         return ans;
     }
 
@@ -82,21 +77,21 @@ public class Calculator {
         }
         System.out.println("The Result is "+ ans);
 
-        logger.info("Executing Factorial function!");
+        logger.info("Factorial calculation");
         return ans;
     }
     public static double naturalLog_Function(double num){
         double ans = Math.log(num);
         System.out.println("The Result is "+ ans);
 
-        logger.info("Executing NaturalLog function!");
+        logger.info("NaturalLog calculation");
         return ans;
     }
     public static double power_Function(double num, double exp){
         double ans = Math.pow(num,exp);
         System.out.println("The Result is "+ ans);
 
-        logger.info("Executing Power function!");
+        logger.info("Power calculation");
         return ans;
     }
 

@@ -1,0 +1,40 @@
+pipeline{
+    environment{
+            docker_image = ""
+            registryCredential='docker'
+    }
+    agent any
+    stages{
+        stage('Step 1: Git Clone'){
+            steps{
+                git branch: 'master', url: 'https://github.com/NirajGujarathi/calculator-devopsProject.git'
+            }
+        }
+        stage('Step 2: Maven Build'){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
+        stage('Step 3: Build Docker Image'){
+            steps {
+                script {
+                    docker_image = docker.build "nirajg/calculator_devops:latest"
+                }
+            }
+        }
+        stage('Step 4: Push docker image to hub') {
+            steps {
+                script {
+                    docker.withRegistry('', 'docker') {
+                        docker_image.push()
+                    }
+                }
+            }
+        }
+        stage('Step 5: Ansible Deployment'){
+            steps{
+                ansiblePlaybook becomeUser: 'null', colorized: true, credentialsId: 'docker', installation: 'Ansible', inventory: 'deployment/inventory', playbook: 'deployment/deploy.yml', sudoUser: 'null'
+            }          
+        }   
+    }
+}

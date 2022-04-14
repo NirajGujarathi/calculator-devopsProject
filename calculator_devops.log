@@ -1,1 +1,27 @@
 14/Apr/2022:16:56:20 968 [Calculator.java] [INFO] Application.Calculator - Executing squareRoot function!
+14/Apr/2022:16:59:31 249 [Calculator.java] [INFO] Application.Calculator - Executing NaturalLog function!
+14/Apr/2022:16:59:31 273 [Calculator.java] [INFO] Application.Calculator - Executing Power function!
+14/Apr/2022:16:59:31 275 [Calculator.java] [INFO] Application.Calculator - Executing Factorial function!
+14/Apr/2022:16:59:31 276 [Calculator.java] [INFO] Application.Calculator - Executing Factorial function!
+14/Apr/2022:16:59:31 278 [Calculator.java] [INFO] Application.Calculator - Executing NaturalLog function!
+14/Apr/2022:16:59:31 280 [Calculator.java] [INFO] Application.Calculator - Executing Power function!
+14/Apr/2022:16:59:31 282 [Calculator.java] [INFO] Application.Calculator - Executing squareRoot function!
+14/Apr/2022:16:59:31 283 [Calculator.java] [INFO] Application.Calculator - Executing squareRoot function!
+14/Apr/2022:16:59:43 845 [Calculator.java] [INFO] Application.Calculator - Executing NaturalLog function!
+14/Apr/2022:16:59:43 852 [Calculator.java] [INFO] Application.Calculator - Executing Power function!
+14/Apr/2022:16:59:43 853 [Calculator.java] [INFO] Application.Calculator - Executing Factorial function!
+14/Apr/2022:16:59:43 855 [Calculator.java] [INFO] Application.Calculator - Executing Factorial function!
+14/Apr/2022:16:59:43 856 [Calculator.java] [INFO] Application.Calculator - Executing NaturalLog function!
+14/Apr/2022:16:59:43 858 [Calculator.java] [INFO] Application.Calculator - Executing Power function!
+14/Apr/2022:16:59:43 859 [Calculator.java] [INFO] Application.Calculator - Executing squareRoot function!
+14/Apr/2022:16:59:43 861 [Calculator.java] [INFO] Application.Calculator - Executing squareRoot function!
+14/Apr/2022:19:22:14 588 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:19:23:12 126 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:19:25:24 791 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
+14/Apr/2022:19:25:24 803 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:19:25:24 804 [Calculator.java] [INFO] Application.Calculator - SquareRoot calculation
+14/Apr/2022:19:25:24 805 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
+14/Apr/2022:19:25:24 807 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
+14/Apr/2022:19:25:24 808 [Calculator.java] [INFO] Application.Calculator - Power calculation
+14/Apr/2022:19:25:24 809 [Calculator.java] [INFO] Application.Calculator - SquareRoot calculation
+14/Apr/2022:19:25:24 811 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
