@@ -6,5 +6,5 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: nirajg/calculator_devops 
+        name: nirajg/calculator_devops
         source: pull
