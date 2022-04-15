@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
     public static void main(String[] args){
-        Scanner reader = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int choices, flag=0;
         double num, exp;
         int fact_num;
@@ -19,7 +19,7 @@ public class Calculator {
             System.out.println("4. Power");
             System.out.println("5. Exit from Application");
             System.out.print("Enter your choice(number): ");
-            choices = reader.nextInt();
+            choices = sc.nextInt();
             if(choices==5) flag = 1;
             else{
                 switch(choices){
@@ -27,30 +27,54 @@ public class Calculator {
                     case 1:
                         System.out.println("Square Root - option selected\n");
                         System.out.print("Enter number: ");
-                        num = reader.nextDouble();
+                        try {
+                            num = sc.nextDouble();
+                        } catch (InputMismatchException error) {
+                            System.out.println("Invalid input entered.. Please enter number");
+                            logger.info("Invalid Input! Closing Application");
+                            return;
+                        }
                         squareRoot_Function(num);
                         break;
 
                     case 2:
                         System.out.println("Factorial - option selected\n");
                         System.out.print("Enter number: ");
-                        fact_num = reader.nextInt();
+                        try {
+                            fact_num = sc.nextInt();
+                        } catch (InputMismatchException error) {
+                            System.out.println("Invalid input entered.. Please enter number");
+                            logger.info("Invalid Input! Closing Application");
+                            return;
+                        }
                         factorial_Function(fact_num);
                         break;
 
                     case 3:
                         System.out.println("Natural Log - option selected\n");
                         System.out.print("Enter number: ");
-                        num = reader.nextDouble();
+                        try {
+                            num = sc.nextDouble();
+                        } catch (InputMismatchException error) {
+                            System.out.println("Invalid input entered.. Please enter number");
+                            logger.info("Invalid Input! Closing Application");
+                            return;
+                        }
                         naturalLog_Function(num);
                         break;
 
                     case 4:
                         System.out.println("Power - option selected\n");
                         System.out.print("Enter number: ");
-                        num = reader.nextDouble();
+                        try {
+                            num = sc.nextDouble();
+                        } catch (InputMismatchException error) {
+                            System.out.println("Invalid input entered.. Please enter number");
+                            logger.info("Invalid Input! Closing Application");
+                            return;
+                        }
                         System.out.print("Enter exponent: ");
-                        exp = reader.nextDouble();
+                        exp = sc.nextDouble();
                         power_Function(num,exp);
                         break;
 
@@ -74,6 +98,11 @@ public class Calculator {
         int ans = 1;
         for(int i=num; i>=1; i--) {
             ans = ans * i;
+        }
+        if(num<0){
+            System.out.println("Negative number.. Please enter Positive Number");
+            logger.info("Negative Number entered! - in Factorial function");
+            return 0;
         }
         System.out.println("The Result is "+ ans);
 

@@ -36,3 +36,7 @@
 14/Apr/2022:20:13:36 112 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
 14/Apr/2022:20:51:59 468 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
 14/Apr/2022:20:52:06 505 [Calculator.java] [INFO] Application.Calculator - Factorial calculation
+15/Apr/2022:20:17:06 658 [Calculator.java] [INFO] Application.Calculator - Power calculation
+15/Apr/2022:20:17:22 305 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
+15/Apr/2022:20:17:42 431 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
+15/Apr/2022:20:17:52 976 [Calculator.java] [INFO] Application.Calculator - NaturalLog calculation
